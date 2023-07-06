@@ -57,7 +57,7 @@ export interface ClientOptions {
   queueDisable?: boolean;
   bindDN?: string;
   bindCredentials?: string;
-  createConnection?: (port: number, host: string, onConnect: () => void, onSocketDefined: (socket: net.Socket) => void, onError: (error: any) => void);
+  createConnection?: (port: number, host: string, onConnect: () => void, onSocketDefined: (socket: net.Socket) => void, onError: (error: any) => void) => void;
 }
 
 export interface SearchOptions {
